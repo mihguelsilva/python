@@ -41,12 +41,13 @@ def calcular(operacao):
         conv_dolar_real(dolar, 5.20)
 
 def pergunta(callback):
-    operacao = input("O que você deseja calcular? [Escolha o número da operação]\
-        \n1 (Área do Retângulo)\
-        \n2 (Área do Círculo)\
-        \n3 (Calcular desconto)\
-        \n4 (Converter real para dólar)\
-        \n5 (Converter dólar para real)\n")
+    operacao = input("""O que você deseja calcular? [Escolha o número da operação]
+1 (Área do Retângulo)
+2 (Área do Círculo)
+3 (Calcular desconto)
+4 (Converter real para dólar)
+5 (Converter dólar para real)""")
+    
     callback(operacao)
 
 pergunta(calcular)
